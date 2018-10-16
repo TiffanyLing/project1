@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+html,body{
+	margin:0;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+    background-color: #FEF4EA;
+}
+
+@keyframes twirl{
+    50%{
+    	transform:rotate(360deg);
+    }
+    100%{
+    	transform:initial;
+    }
+}
+@keyframes stomp{
+	50%{
+    	transform:translate(0,300px);
+    }
+    100%{
+    	transform:initial;
+    }
+}
+
+#square1{
+	animation:twirl 4s infinite;
+	background-color:#E37999;
+	width:30vmin;
+	height:30vmin;
+
+
+}
+#square2{
+    animation:twirl 4s infinite;
+    background-color:#CE5284;
+    width:30vmin;
+    height:30vmin;
+}
+#square3{
+    animation:twirl 4s infinite;
+    background-color:#EF8484;
+    width:30vmin;
+    height:30vmin;
+    position:absolute;
+    top:15vmin;
+    right:30vmin;
+}
+#square4{
+    animation:twirl 4s infinite;
+    background-color:#F6C0D2;
+    width:30vmin;
+    height:30vmin;
+    position:absolute;
+    top:15vmin;
+    right:0vmin;
+
+}
+#square5{
+    animation:twirl 2s infinite;
+    background-color:#2799D2;
+    width:15vmin;
+    height:15vmin;
+    position:absolute;
+    top:1vmin;
+    right:30vmin;
+
+}
+#square6{
+    animation:twirl 2s infinite;
+    background-color:#1A7CAE;
+    width:15vmin;
+    height:15vmin;
+    position:absolute;
+    top:1vmin;
+    right:15vmin;
+    
+
+}
+#square7{
+    animation:twirl 2s infinite;
+    background-color:#4DA0B5;
+    width:15vmin;
+    height:15vmin;
+    position:absolute;
+    top:16vmin;
+    right:30vmin;
+    
+
+}
+#square8{
+    animation:twirl 2s infinite;
+    background-color:#51C2DE;
+    width:15vmin;
+    height:15vmin;
+    position:absolute;
+    top:16vmin;
+    right:15vmin;
+   
+}
+#another{
+	animation: twirl 60s infinite;
+}
+#outer{
+	animation: stomp 1s infinite;
+}
+</style>
+</head>
+<body>
+    <div id="outer">
+    	<div id="square1"></div>
+    </div>
+    <div id="outer">
+        <div id="square2"></div>
+    </div>
+    <div id="outer">
+        <div id="square3"></div>
+    </div>
+    <div id="outer">
+        <div id="square4"></div>
+    </div>
+    <div id="outer">
+        <div id="square5"></div>
+    </div>
+    <div id="outer">
+        <div id="square6"></div>
+    </div>
+    <div id="outer">
+        <div id="square7"></div>
+    </div>
+    <div id="outer">
+        <div id="square8"></div>
+    </div>
+    
+</body>
+</html>
