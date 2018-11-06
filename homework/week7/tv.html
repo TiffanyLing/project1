@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="css/1.css" />
+<style>
+    html,body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+    .full-height {
+  height: 100%;
+
+}
+</style>
+</head>
+<body>
+    <br><div class="full-height"><img src="getElementById/channels/1.gif" id="channels" width = "1000px" height = "600px"></div>
+    <div></div>
+<script>
+
+
+
+var myImage = document.getElementById("channels");
+
+var channels = [
+    "getElementById/channels/12.gif",
+    "getElementById/channels/11.gif",
+    "getElementById/channels/10.gif",
+    "getElementById/channels/9.gif",
+    "getElementById/channels/8.gif",
+    "getElementById/channels/7.gif",
+    "getElementById/channels/6.gif",
+    "getElementById/channels/5.gif",
+    "getElementById/channels/4.gif",
+    "getElementById/channels/3.gif",
+    "getElementById/channels/2.gif",
+    "getElementById/channels/1.gif",
+    ];
+
+var num = 0;
+
+function type(event ){
+    var x = event.keyCode;
+    if (x == 38 && num!=0) { 
+      num = num - 1;
+    }else if (x == 38 && num==0){ 
+     num = channels.length-1;
+    }else if (x == 40 && num!=channels.length-1) {
+      num = num + 1;
+    }else if (x == 40 && num==channels.length-1) {
+     num=1;
+    } 
+    console.log(x);
+    document.getElementById("channels").src = channels[num];
+}
+
+
+document.onkeydown = type;
+
+</script>
+</body>
+</html>
